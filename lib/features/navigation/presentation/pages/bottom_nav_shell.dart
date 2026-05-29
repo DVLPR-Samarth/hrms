@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hrms/features/chat/presentation/pages/chat_screen.dart';
 import 'package:hrms/features/community/presentation/pages/community_screen.dart';
-import 'package:hrms/features/home/presentation/pages/home_screen.dart';
+import 'package:hrms/features/home/presentation/pages/home_page.dart';
 import 'package:hrms/features/navigation/presentation/pages/menu_screen.dart';
 import 'package:hrms/features/navigation/presentation/widgets/curved_bottom_nav_bar.dart';
 import 'package:hrms/features/profile/presentation/pages/profile_screen.dart';
@@ -19,7 +19,7 @@ class _BottomNavShellState extends State<BottomNavShell> {
   late final ValueNotifier<int> _currentIndex;
 
   static const List<Widget> _screens = [
-    HomeScreen(),
+    HomePage(),
     CommunityScreen(),
     MenuScreen(),
     ChatScreen(),
